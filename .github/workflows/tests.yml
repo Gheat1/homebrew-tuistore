@@ -12,9 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Homebrew
-        uses: Homebrew/actions/setup-homebrew@master
-
+      # macos-latest runners ship Homebrew preinstalled — no setup action
+      # needed, and it sidesteps a cleanup bug in Homebrew/actions/setup-homebrew
       - name: Tap this checkout
         run: |
           brew untap gheat1/tuistore 2>/dev/null || true
