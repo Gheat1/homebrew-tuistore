@@ -16,7 +16,9 @@ jobs:
         uses: Homebrew/actions/setup-homebrew@master
 
       - name: Tap this checkout
-        run: brew tap gheat1/tuistore "file://${{ github.workspace }}"
+        run: |
+          brew untap gheat1/tuistore 2>/dev/null || true
+          brew tap gheat1/tuistore "file://${{ github.workspace }}"
 
       - run: brew style gheat1/tuistore/tuistore
       - run: brew audit --online gheat1/tuistore/tuistore
