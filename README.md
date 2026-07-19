@@ -1,5 +1,7 @@
 # homebrew-tuistore
 
+[![tests](https://github.com/Gheat1/homebrew-tuistore/actions/workflows/tests.yml/badge.svg)](https://github.com/Gheat1/homebrew-tuistore/actions/workflows/tests.yml)
+
 Homebrew tap for [tuistore](https://github.com/Gheat1/tuistore), the TUI app store.
 
 ```sh
