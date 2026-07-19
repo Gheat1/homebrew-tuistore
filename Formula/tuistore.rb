@@ -2,8 +2,8 @@ class Tuistore < Formula
   desc "TUI app store — browse, search, and one-key-install terminal apps"
   homepage "https://github.com/Gheat1/tuistore"
   url "https://github.com/Gheat1/tuistore.git",
-      tag:      "v0.4.0",
-      revision: "e32cfe75d9cb532e76aca63fcab8ada31ad54c3a"
+      tag:      "v0.4.3",
+      revision: "f69f6e9a05747dfc31d1378edc8676675c31a03f"
   license "GPL-3.0-or-later"
   head "https://github.com/Gheat1/tuistore.git", branch: "main"
 
