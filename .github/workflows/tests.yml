@@ -15,7 +15,10 @@ jobs:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      - run: brew style --formula Formula/tuistore.rb
-      - run: brew audit --formula --online Formula/tuistore.rb
-      - run: brew install --formula Formula/tuistore.rb
-      - run: brew test tuistore
+      - name: Tap this checkout
+        run: brew tap gheat1/tuistore "file://${{ github.workspace }}"
+
+      - run: brew style gheat1/tuistore/tuistore
+      - run: brew audit --online gheat1/tuistore/tuistore
+      - run: brew install gheat1/tuistore/tuistore
+      - run: brew test gheat1/tuistore/tuistore
